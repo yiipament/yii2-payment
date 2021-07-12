@@ -1,20 +1,34 @@
 支付组件
+====
+
 YII2 支付组件（支付宝支付、微信支付）
 
 Installation
-The preferred way to install this extension is through composer.
+------------
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 Either run
 
+```
 php composer.phar require --prefer-dist ixiaomu/yii2-payment "*"
+```
+
 or add
 
+```
 "ixiaomu/yii2-payment": "*"
-to the require section of your composer.json file.
+```
+
+to the require section of your `composer.json` file.
+
 
 Used || Example
+---------------
+
 //根据不同的支付方式及通道 传入不同的支付配置及支付数据
 
+```php
 <?= 
     use ixiaomu\payment\Pay;
 
@@ -42,3 +56,5 @@ Used || Example
     }catch (Exception $e){
         throw new Exception('支付失败：'.$e->getMessage());
     }
+    
+```
