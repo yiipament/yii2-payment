@@ -11,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist ixiaomu/yii2-payment "*"
+php composer.phar require --prefer-dist yiipament/yii2-payment "*"
 ```
 
 or add
 
 ```
-"ixiaomu/yii2-payment": "*"
+"yiipament/yii2-payment": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -30,7 +30,7 @@ Used || Example
 
 ```php
 <?= 
-    use ixiaomu\payment\Pay;
+    use yiipament\payment\Pay;
 
     $payConfig = [ //换成自己的
         'app_id'        => 'wx69f7d561891b969d',  // 公众账号ID
