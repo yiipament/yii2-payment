@@ -1,6 +1,5 @@
 支付组件
 ====
-
 YII2 支付组件（支付宝支付、微信支付）
 
 Installation
@@ -11,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yiipament/yii2-payment "*"
+php composer.phar require --prefer-dist ixiaomu/yii2-payment "*"
 ```
 
 or add
 
 ```
-"yiipament/yii2-payment": "*"
+"ixiaomu/yii2-payment": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -25,12 +24,10 @@ to the require section of your `composer.json` file.
 
 Used || Example
 ---------------
-
 //根据不同的支付方式及通道 传入不同的支付配置及支付数据
-
 ```php
 <?= 
-    use yiipament\payment\Pay;
+    use ixiaomu\payment\Pay;
 
     $payConfig = [ //换成自己的
         'app_id'        => 'wx69f7d561891b969d',  // 公众账号ID
